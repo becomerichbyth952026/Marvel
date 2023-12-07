@@ -1,16 +1,40 @@
 import React from "react";
-import json from 'marvel.json'
+import MarvelImg from '../media/187551-captain-america-1440x829.jpg'
+import MarvelLogo from '../media/logo.jpg'
+import { Cards } from "./Cards";
 
 
-export function Main(){
+
+
+export const Main = () => {
   return (
+    <>
+    
     <div className="header">
-      <div className="bg">
-        <img src="" alt="" />
+      
+      <div className="py">
+        <img src={MarvelImg} alt="" />
       </div>
       <div className="search-bar">
-        
+        <img src={MarvelLogo} alt="logo"/>
+        <input type="search" placeholder="Search Information" 
+        className="search"/>
       </div>
+
+      <div className="content">
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+
+      </div>
+
+      
     </div>
+    
+
+    
+    </>
   );
 }

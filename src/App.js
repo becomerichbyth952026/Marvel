@@ -1,14 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import marvel from './marvel.json';
+import { Main } from './Components/Main';
+import './Components/style.css';
 
 
 function App() {
   return (
-    <div className="App">
-      ...Marvel Cards...
-
-    </div>
+    <>
+     <Main />
+    
+    </>
   );
 }
 
